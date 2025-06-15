@@ -1,0 +1,18 @@
+[package]
+name = "smuggler"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.39", features = ["derive"] }
+color-print = "0.3.7"
+colored = "3.0.0"
+rand = "0.8"
+regex = "1.11.1"
+rustls = "0.20"
+tokio = { version = "1", features = ["full"] }
+tokio-rustls = "0.23"
+webpki-roots = "0.22"
+
+[profile.release]
+opt-level = 3
